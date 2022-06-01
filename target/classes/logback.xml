@@ -1,0 +1,20 @@
+<configuration debug="true">
+
+	<!-- VARIABLE DONDE SE GUARDA LA FECHA -->
+	<timestamp key="logDateVar" datePattern="dd-MM-yyyy" />
+
+	<!-- SALIDA DE LOG -->
+	<appender name="consAp" class="ch.qos.logback.core.ConsoleAppender">
+
+		<!-- PERSONALIZACION DEL LAYOUT -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-4level %logger{32} - [%method]: %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- ROOT LOGGER -->
+	<root level="info">
+		<appender-ref ref="consAp" />
+	</root>
+
+</configuration>
