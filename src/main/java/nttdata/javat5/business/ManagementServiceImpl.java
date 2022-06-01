@@ -69,7 +69,7 @@ public class ManagementServiceImpl implements ManagementServiceI {
 			
 				for (Entry<Integer, Employee> entry : database.entrySet()) {
 					
-					//Se cre una instancia con los valores del mapa
+					//Se crea una instancia con los valores del mapa
 					Employee e = entry.getValue();
 					int id = e.getId();
 					String name = e.getName();
